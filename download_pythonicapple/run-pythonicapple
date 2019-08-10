@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo python3 /usr/lib/python3/dist-packages/pythonicapple/pythonicapple.py 1
