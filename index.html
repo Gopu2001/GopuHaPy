@@ -1,54 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Anmol Kapoor</title>
-        <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-        <link rel="manifest" href="./site.webmanifest">
-        <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
+<head>
+  <title>Anmol Kapoor</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+  <link rel="manifest" href="./site.webmanifest">
+  <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
 
-        <style>
-            div.indent {
-              text-indent: 50px;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="top" style="background:grey; color:black">
-            <img src="My_Logo.PNG" width=140px align="left">
-            <center>
-                <h1>
-                    Anmol Kapoor
-                </h1>
-                <p>
-                    Email me at <a href="mailto:anmol1227@yahoo.com">anmol1227@yahoo.com</a><br>
-                    Call/Text me at <a href="tel:2099930227">(209)993-0227</a><br>
-                    Github: <a href="www.github.com/Gopu2001">www.github.com/Gopu2001</a><br>
-                    LinkedIn: <a href="https://www.linkedin.com/in/anmol-kapoor-755b26143/">linkedin.com/in/anmol-kapoor-755b26143/</a>
-                </p>
-            </center>
-        </div>
-        <div id="projects">
-            <h2>
-                Current Projects:
-            </h2>
-            <p>
-                PythonicApple Game - Can you beat my snake's record?<br>
-                <iframe width="900" height="506" src="https://www.youtube.com/embed/x7bIiRFD1-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="indent"><a href="./download_pythonicapple.zip">Click here to download the game for your Raspbian System!</a></div>
-            </p>
-        </div>
-        <div id="resume">
-            <h2>
-                Get to Know Me:
-            </h2>
-            <p>
-                You may review my Resume <a href="./Anmol Kapoor Master Resume.docx">here</a>.<br>
-                Contact me to setup a meeting <a href="#top">here</a>.
-            </p>
-        </div>
-    </body>
+  <style>
+  .indent {
+    text-indent: 50px;
+  }
+
+  .contactnav {
+    width: 25%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    right: 25%;
+    background-color: blue;
+    overflow-x: hidden;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .contactnav a-contacts {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #818181;
+    display: block;
+  }
+
+  /* The sidebar menu */
+  .projects {
+    /*height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 25%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    bottom: 0; /* Stay at the top */
+    right: 0;
+    background-color: grey; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  /* The navigation menu links */
+  .projects a-projects {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  </style>
+</head>
+<body>
+  <div id="top" style="background:grey; color:black">
+    <img src="My_Logo.PNG" width=140px align="left">
+    <center>
+      <h1 style="line-height:0.9">
+        <font size="100%"> Anmol Kapoor </font><br><br>
+        <div style="line-height:0.95"><font size="+2"> <i> Perfection is a moving target.<br>Move along with it.</i> </font></div>
+      </h1>
+    </center>
+  </div>
+  <div id="Contact Me" class = "contactnav" style="font-size:15px">
+    <h1>
+      Contact Me
+    </h1>
+    Contact me to setup a meeting:
+    <ul>
+      <li>Email: anmol1227@yahoo.com</li>
+      <li>Call/Text: <a style="color:black" href="tel:2094071263">(209)407-1263</a></li>
+    </ul>
+  </div>
+  <div id="projects" class = "projects">
+    <h2>
+      Current Projects:
+    </h2>
+    <p>
+      PythonicApple Game - Can you beat my snake's record?<br><br>
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/x7bIiRFD1-A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <a color="black" href="./download_pythonicapple.zip">CLICK HERE TO DOWNLOAD!</a><br><br>
+      Check out My GitHub <a href="www.github.com/Gopu2001">here</a>.
+    </p>
+  </div>
+  <div id="My services">
+    <h2>
+      Yes, Perfection is a Moving Target.
+    </h2>
+    <p>
+      Perfection is the standard for everything we do, thus, this term must be defined in your own society.
+      What is your society's definition?
+    </p>
+  </div>
+</body>
 </html>
